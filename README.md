@@ -24,6 +24,9 @@ https://drive.google.com/file/d/17AeD-vTX7x6QsIbaV4cB2i6oG0eSmEfq/view?usp=shari
 live server:
 https://fssa-batch3.github.io/aakash.balamurugan__web_project/
 
+Deploy Link:
+https://deploy-preview-1--b-e-t-t-e-r-m-e.netlify.app/
+
 
 
 Feature scenario
