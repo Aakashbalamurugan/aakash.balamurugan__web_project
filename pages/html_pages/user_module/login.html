@@ -22,39 +22,34 @@
   </head>
 
   <body>
-    <div class="">
-      <div class="login">
-        <h2>Welcome Back</h2>
-        <form>
-          <div class="">
-            <label> Email Id </label>
-            <input type="email" id="log_email" required>
-          </div>
+    <div class="signin_form">
+    <form class="log_form">
 
-          <div class="">
-            <label> Password </label>
-             <input
-              type="password"
-              id="log_password"
-              pattern="(?=^.{4,}(?=.*[A-Z])(?=.*[a-z]).*$"
-              required
-            >
-          </div>
+      <c:if test="${not empty Error}">
+        <div class="alert alert-danger">${Error}</div>
+      </c:if>
 
-          <div class="flex">
-            <div class="">
-<a href="../../Js_pages/user module/login.js">Forgot Password?</a>
-</div>
-            <div class="">
-<a href="./signup.html">Not a user Already?</a>
-</div>
-          </div>
-          <br >
-
-          <button class="button button-block">Log In</button>
-        </form>
-      </div>
+        <div class="form__group field">
+      <input type="email"
+      name="email" id="log_email" value="${email}" class="form__field" placeholder="Name" required="">
+      <label for="email" class="form__label">Password</label>
+     
     </div>
+      <div class="form__group field">
+        <input type="password"
+        id="log_password" pattern="(?=^.{4,}(?=.*[A-Z])(?=.*[a-z]).*$"
+        name="password" value="${password}" class="form__field" placeholder="password" required="">
+        <label for="password" class="form__label">Password</label>
+     </div>
+  
+    <p>
+      <a href="#">Forget Password</a>
+    </p>
+    <div class="btn">
+      <button>submit</button>
+    </div>
+  </form>
+   </div>
     <script src="../../Js_pages/user module/login.js">
      
     </script>
